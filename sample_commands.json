@@ -1,0 +1,41 @@
+[
+  {
+    "voice_input": "Move forward two meters",
+    "expected_command": {
+      "action": "move",
+      "direction": "forward",
+      "distance_m": 2
+    }
+  },
+  {
+    "voice_input": "Stop right now",
+    "expected_command": {
+      "action": "stop"
+    }
+  },
+  {
+    "voice_input": "Turn left ninety degrees",
+    "expected_command": {
+      "action": "turn",
+      "direction": "left",
+      "angle_deg": 90
+    }
+  },
+  {
+    "voice_input": "Pick up the red box and bring it to the table",
+    "expected_command": {
+      "action": "grip",
+      "target": "red_box",
+      "then": {
+        "action": "move",
+        "destination": "table"
+      }
+    }
+  },
+  {
+    "voice_input": "How are you doing today?",
+    "expected_command": {
+      "action": "none"
+    }
+  }
+]
